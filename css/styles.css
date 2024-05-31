@@ -1,0 +1,35 @@
+#calculator {
+  width: 200px;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid #ccc; /* Agregamos un borde */
+  border-radius: 10px; /* Agregamos un radio de curvatura para darle un diseño más redondeado */
+  padding: 10px; /* Agregamos un padding para separar el contenido del borde */
+  background-color: #f0f0f0; /* Agregamos un fondo claro para darle un diseño más atractivo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra para darle un diseño más profundo */
+}
+  
+  #display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  button[onclick*="appendOperator"] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+  }
